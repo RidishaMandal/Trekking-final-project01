@@ -1,0 +1,2141 @@
+body{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 1140px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+header{
+    padding: 10px 0;
+}
+
+.nav-box{
+    display: flex;
+    justify-content: space-between;
+     align-items: center; 
+}
+.nav-links ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 30px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+
+}
+.nav-links ul li:nth-last-child(1){
+    padding-right: 0;
+}
+.nav-links ul li a:hover{
+    color: orangered;
+    transition: all 0.5s ease-in-out;
+}
+.nav-links ul li .active{
+    color: orangered;
+}
+/* toggle bar */
+.toggle-bar{
+    display: none !important;
+}
+/*==============banner sec============ */
+.banner-1{
+    position: relative;
+
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+.slider1{
+    background-image: url(slider1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 700px;
+    background-position: center center;
+
+}
+  .banner-1 .container{
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+ }
+   
+
+.slider2{
+    background-image: url(slider2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 700px;
+    background-position: center center;
+
+}
+.slider3{
+    background-image: url(slider3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 700px;
+    background-position: center center;
+
+}
+ /* .slider1::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    mix-blend-mode: multiply;
+    opacity: 0.20;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+.slider2::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    mix-blend-mode: multiply;
+    opacity: 0.20;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+.slider3::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    mix-blend-mode: multiply;
+    opacity: 0.20;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}  */
+.banner1-text{
+    text-align: center;
+    transform: translate(-50%,-50%);
+    top: 40%;
+    left: 50%;
+    position: absolute;
+
+}
+.banner1-text h1{
+    color: white;
+    font-size: 80px;
+    font-family: "Play", serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1.2;
+    
+
+}
+.banner1-text p{
+    color: white;
+    font-size: 20px;
+    font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 20px 0;
+  letter-spacing: 1.2;
+
+}
+.banner1-text a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 10px 18px;
+    border-radius: 20px;
+    background-color: white;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.banner1-text a:hover{
+    background-color: orangered;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.col100{
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 0 15px;
+}
+
+.col33{
+    max-width: 33.33%;
+    flex: 0 0 33.33%;
+    padding: 0 15px; 
+}
+.cardsec1-heading{
+    text-align: center;
+    padding: 30px 316px;   
+}
+.cardsec1-heading h2{
+    font-size: 45px;
+    font-family: "Play", serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1.2;
+}
+/* hover effect starts here */
+.cardbox-1{
+    height: 400px;
+    margin: 20px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 70px;
+}
+.card1-image img{
+    height: 400px;
+    width: 350px;
+    border-radius: 3px;
+    object-fit: cover;
+    transition: 0.5s;
+
+}
+.intro{
+    height: 60px;
+    width: 350px;
+    padding: 6px;
+    position: absolute;
+    background: rgb(27, 27, 27, .5);
+    bottom: 0;
+    transition: 0.5s;
+}
+.intro h3{
+    color: white;
+    margin: 8px;
+    font-size: 23px;
+    font-family: "Play", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.intro p{
+    font-size: 14px;
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal; 
+    margin-left: 15px;
+    margin-bottom: 8px;
+    visibility: hidden;
+    opacity: 0;
+}
+.intro a{
+    text-decoration: none;
+    color: orangered;
+    font-size: 15px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 15PX;
+    visibility: hidden;
+    opacity: 0;
+}
+.cardbox-1:hover{
+    cursor: pointer;
+}
+.cardbox-1:hover .intro{
+    height: 140px;
+    bottom: 0;
+    background: black;
+}
+.cardbox-1:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.cardbox-1:hover a{
+    opacity: 1;
+    visibility: visible;
+}
+.cardbox-1:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+.cardbox-1 a:hover{
+    color: yellow;
+}
+/* hover effect ends here */
+.trekbox-1{
+    justify-content: space-between;
+
+}
+.col50{
+    max-width: 50%;
+    flex:0 0 50%;
+    padding:0 15px;
+}
+.trektrips-sec1{
+    padding-top: 70px;
+    position: relative;
+}
+
+h2.h5-title{
+    font-size: 20px;
+    color: orangered;
+    padding: 20px 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+.trekbox-1 h3{
+    font-size: 38px;
+    font-family: "Play", serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-bottom: 40px;
+
+}
+.trekbox-1 p{
+    font-size: 18px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-bottom: 80px;
+    line-height: 1.5;
+}
+.trekbox-1 a{
+    font-size: 15px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px 19px;
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    transition: 0.5s ease-in-out;
+}
+.trekbox-1 a:hover{
+    color: black;
+    background-color: rgb(240, 240, 45);
+}
+.trekbox-1-image{
+    text-align: center;
+}
+.trekbox-1-image img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+.col33{
+    max-width: 33.33%;
+    flex: 0 0 33.33%;
+    padding: 0 15px; 
+}
+.location-card{
+    background-color: palegreen;
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+}
+.adv-card{
+    background-color: orangered;
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+}
+.guide-card{
+    background-color: rgb(26, 26, 66);
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+}
+.trekbox-1-card img{
+    max-width: 100%;
+    height: auto;
+}
+.trekbox-1-card p{
+    font-size: 15px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    padding-top: 15px;
+
+}
+.trekbox-1-card h3{
+    font-size: 18px;
+    padding-top: 8px;
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+.trekbox-1-card{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 38%;
+}
+.cardsec-2{
+    background-color: rgb(250, 245, 238);
+    padding-bottom: 80px;
+}
+.tools-heading{
+    padding: 150px 100px 20px 100px;
+    text-align: center;
+
+ }
+ .tools-heading h2{
+    font-family: "Play", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+
+ }
+ .col25{
+    max-width: 25%;
+    flex: 0 0 25%;
+    padding: 0 15px; 
+}
+.tools img{
+    padding: 60px;
+    background-color: aquamarine;
+    border-radius: 50%;
+}
+.tools :hover{
+    background-color: gray;
+    transition: 0.5s ease-in-out;
+}
+.tool-name{
+    text-align: center;
+    margin-top: 20px;
+}
+.tool-name h4{
+    font-size: 25px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.roundtrip-sec{
+    padding: 60px 0;
+}
+.roundtrip-sec-image img{
+    max-width: 100%;
+    height: auto;
+}
+.roundtrip-box h3{
+    font-size: 38px;
+    font-family: "Play", serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-bottom: 40px;
+
+}
+.roundtrip-box p{
+    font-size: 18px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-bottom: 80px;
+    line-height: 1.5;
+
+}
+.roundtrip-box a{
+    font-size: 15px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px 19px;
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    transition: 0.5s ease-in-out;
+
+}
+.roundtrip-box a:hover{
+    color: black;
+    background-color: rgb(240, 240, 45);
+
+}
+.img-sec{
+    background-image: url(section-6-bottom-img.jpg);
+    background-repeat: no-repeat;
+    min-height: 300px;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+.guide-sec{
+    background-color: rgb(40, 40, 73);
+    padding: 80px 0;
+}
+.h5-title2{
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.guide-heading{
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+    font-size: 42px;
+    font-family: "Play", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.guide-img img{
+    max-width: 100%;
+    height: auto;
+    border: 10px solid gray;
+    border-radius: 15px;
+    transition: 0.3s ease-in-out;
+}
+.guide-img img:hover{
+    border: 10px solid orangered;
+}
+.guide-dets{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+.guide-dets h4{
+    font-size: 22px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.guide-dets p{
+    font-size: 18px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+.footer-sec{
+    background-image: url(slider3.jpg);
+    min-height: 900px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    padding-top: 80px;
+}
+.footer-head h3{
+    font-size: 38px;
+    font-family: "Play", serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-bottom: 40px;
+    text-align: center;   
+    color: white;
+    margin: 0 22%;
+    padding: 10px 0 50px 0;
+}
+
+.formarea{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.form{
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+}
+input[type="email"]{
+    /* width: 750px;
+    height: 80px; */
+    padding: 25px 30px ;
+    outline: none;
+    border: none;
+    background-color: white;
+    border-radius: 50px;
+    /* padding: 0 210px 0 20px; */
+    font-size: 18px;
+    color: gray;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    width: 100%;
+}
+.form a{
+    background-color: orangered;
+    color: white;
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 27px 25px;
+    border-radius: 50px;
+    transition: 0.4s ease-in-out;
+    text-decoration: none;
+
+}
+.form a:hover{
+    color: black;
+    background-color: rgb(240, 240, 45);
+}
+.footer-box{
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.foot-heading{
+    color: white;
+    font-size: 23px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding-bottom: 10px;
+
+}
+.foot-details{
+    font-size: 18px;
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;   
+}
+.link-list li{
+    list-style-type: none;
+    margin-bottom: 7px;
+}
+.link-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal; 
+    transition: 0.3s ease-in-out;  
+}
+.link-list li a:hover{
+    color: orangered;   
+}
+.contact-detail{
+    font-size: 18px;
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;   
+}
+.contact-list{
+    font-size: 18px;
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;   
+    margin: 14px 0;
+}
+.contact-list li{
+    list-style-type: none;
+}
+.icon-box{
+    display: flex;
+}
+.icon{
+    margin-right: 22px;
+}
+.icon:nth-last-child(1){
+    margin-right: 0;
+}
+.icon a{
+    display: inline-block;
+    text-decoration: none;
+}
+.icon a .face{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+.icon a .face:hover{
+    color: white;
+    background-color: orangered;
+}
+.footer-lower-sec{
+    margin-top: 70px;    
+}
+.foot-row-lower{
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 50px;
+    width: 100%;
+    font-size: 17px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+
+/* Mediaquery */
+/* ...................................... */
+@media(max-width:1199px){
+
+}
+/* .......................................... */
+
+@media(max-width:1024px){
+    .nav-links ul li{
+        padding-right: 25px;
+    }
+    .banner1-text h1{
+        font-size: 72px;          
+    }
+    .trektrips-sec1{
+        padding-top: 40px;
+    }
+    .tools-heading h2{
+        font-size: 40px;
+    
+     }
+    .roundtrip-box h3{
+        padding-bottom: 30px;
+    
+    }
+      
+}
+/* ......................................... */
+@media(max-width:991px){
+    .nav-links ul li{
+    padding-right: 20px;
+    }
+    .nav-links ul li a{
+        font-size: 20px;
+    }
+    .slider1{
+        min-height: 600px;
+    }
+    .slider2{
+        min-height: 600px;
+    }
+    .slider3{
+        min-height: 600px;
+    }
+    .cardsec1-heading{
+        padding: 30px 100px;   
+    }
+    .cardsec1-box > .col33{
+        max-width: 100%;
+        flex: 0 0 100%;
+        }
+    .card1-image img{ 
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+    }
+    .intro{
+        width: 100%;
+    }
+    .trekbox-1-card{
+        visibility: hidden;
+    }
+    .tools-heading{
+        padding: 90px 100px 20px 100px;
+        text-align: center;
+     }
+    
+    .tools img{
+        padding: 30px;
+    }
+    .guide-sec{
+         padding: 50px 0 80px 0;
+    }
+    .footer-sec{
+        padding-bottom: 40px;
+    }
+
+}
+/* .......................................... */
+
+@media(max-width:800px){
+    .toggle-bar{
+        display: none;
+    }
+     .nav-links ul li{
+        padding-right: 20px;
+        }
+        .nav-links ul li a{
+            font-size: 20px;
+        }
+        .slider1{
+            min-height: 600px;
+        }
+        .slider2{
+            min-height: 600px;
+        }
+        .slider3{
+            min-height: 600px;
+        }
+        .cardsec1-heading{
+            padding: 30px 100px;   
+        }
+        .cardsec1-box > .col33{
+            max-width: 100%;
+            flex: 0 0 100%;
+            }
+        .card1-image img{ 
+            width: 100%;
+            object-fit: cover;
+            height: auto;
+        }
+        .intro{
+            width: 100%;
+        }
+        .trekbox-1 p{
+            padding-bottom: 60px;
+        }
+        .trekbox-1 a{
+            margin-bottom: 30px;
+        }
+        .trekbox-1-card{
+            visibility: hidden;
+        }
+        .tools-heading{
+            padding: 90px 100px 20px 100px;
+            text-align: center;       
+        }
+        
+        .tools img{
+            padding: 30px;
+        }
+        .guide-sec{
+             padding: 50px 0 80px 0;
+        }
+        .footer-sec{
+            padding-bottom: 40px;
+        }
+}
+/* ....................................... */
+@media(max-width:767px){
+    .nav-box{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+    }
+    .nav-logo{
+        margin-right: auto;
+    }
+    .nav-links ul li{
+        display: block;
+        padding-right: 0;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .nav-links ul li a {
+        font-size: 22px;
+        color: white;
+    }
+    .main-links{
+     display: flex;
+      /* list-style-type: none; */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-right: 0px;
+      height: 100vh;
+      width: 100%;
+      /* position: absolute; */
+      left: -100%;
+      top: 0%;
+      background-color: orangered;
+      transition: 500ms;
+      position: fixed;
+
+    }
+    .menu{
+        left: 0%;
+        top: 0%;
+        transition: 500ms;
+        z-index: 2;
+    }
+    .toggle-bar {
+        display: block !important;
+        font-size: 30px;
+        /* background-color: rgb(237, 95, 95); */
+        position: absolute;
+        right: 5%;
+        top:25px;
+        color: black;
+        z-index: 3;      
+    }
+    .nav-links ul li .active{
+        color: black;
+    }
+    .nav-links ul li a :hover{
+        color: black;
+    }
+    .slider1{
+        min-height: 400px;
+    }
+    .slider2{
+        min-height: 400px;
+    }
+    .slider3{
+        min-height: 400px;
+    }
+        .banner1-text h1{
+        font-size: 45px;   
+        }
+        .banner1-text p{
+        font-size: 18px;
+        padding-bottom: 30px;
+        }
+        .banner1-text a{
+        font-size: 15px;
+        padding: 8px 14px;
+        }
+        .cardsec1-box > .col33{
+        max-width: 100%;
+        flex: 0 0 100%;
+        }
+        .cardsec1-heading{
+        padding: 20px 0;   
+        }
+        .cardsec1-heading h2{
+        font-size: 30px;
+        }
+        .cardbox-1{
+        height: 400px;
+        margin: 13px;
+        margin-bottom: 43px;
+        }
+        .card1-image img{
+        height: auto;
+        /* width: 350px; */
+        object-fit: cover; 
+        width: 100%;
+        }
+        .intro{
+        height: 60px;
+        /* width: 350px; */
+        padding: 6px;
+        bottom: 0;
+        width: 100%;
+        }
+        .intro h3{
+        margin: 8px;
+        font-size: 18px;
+        }
+        .trekbox-1 > .col50{
+        max-width: 100%;
+        flex:0 0 100%;
+        }
+         .trektrips-sec1{
+             padding-top: 40px;
+         }
+         .trekbox-1{
+             text-align: center;
+         }
+         .trekbox-1 h3{
+             font-size: 30px;
+             padding: 0 50px 20px 50px;
+             text-align: center; 
+         }
+         .trekbox-1 p{
+             font-size: 16px;
+             padding-bottom: 40px;
+         }
+         .trekbox-1 a{
+              padding: 10px 19px;
+              margin-bottom: 20px;
+         }
+         .trekbox-1-card{
+             visibility: hidden;
+         }
+         .tools-heading{
+             padding: 40px 0 20px 0;   
+         }
+         .tools-heading h2{
+            font-size: 25px;
+         
+         }
+         .cardsec2-box > .col25{
+             max-width: 50%;
+             flex: 0 0 50%;
+             margin-bottom: 20px;
+         }
+         .tools-heading{
+            padding: 70px 100px 20px 100px;
+            text-align: center;
+        
+        }
+        .tools img{
+             max-width: 100%;
+             padding: 50px;    
+         }
+        .tools{
+            text-align: center;
+        }
+        .tool-name{
+             margin-top: 10px;
+             text-align: center;
+         }
+         .tool-name h4{
+             font-size: 18px;
+         }
+         .roundtrip-sec{
+             padding: 30px 0;
+         }
+         .roundtrip-box > .col50{
+             max-width: 100%;
+             flex: 0 0 100%;
+             text-align: center;
+         }
+        .roundtrip-box h3{
+        font-size: 28px;
+        padding-bottom: 20px;
+        padding: 0 50px 20px 50px;
+        text-align: center;
+        }
+        h2.h5-title{
+        padding: 10px 0;
+        }
+         .roundtrip-box p{
+             padding-bottom: 20px;  
+         }
+         .img-sec{
+             background-size: cover;
+             min-height: 130px;
+             
+         }
+         .guide-sec{
+             padding: 30px 0;
+         }
+         .guide-img img{
+            width: 70%;
+         }
+         .h5-title2{
+             font-size: 18px;
+         }
+     
+        .guide-heading{
+        padding: 0 25px 20px 25px;
+        font-size: 32px;     
+        }
+         .guide-box > .col25 {
+             max-width: 100%;
+             flex: 0 0 100%;
+             margin-bottom: 20px;
+             text-align: center;
+         }
+         .guide-dets{
+              padding-top: 10px;
+         }
+         .guide-dets h4{
+             font-size: 22px;
+         }
+         .guide-dets p{
+             font-size: 18px;
+         }
+         .footer-sec{
+             padding-top: 50px;
+             background-size: cover;
+         }
+         .footer-head h3{
+             font-size: 32px;
+             padding-bottom: 25px;
+             margin: 0;
+             padding: 20px 50px;
+         }
+          input[type="email"]{
+            font-size: 15px;
+         }
+         input[type="submit"]{
+            font-size: 15px;
+         }
+         .footer-row > .col33{
+            max-width: 100%;
+            flex: 0 0 100%;
+            text-align: center;
+            margin-bottom: 30px;
+         }
+         .footer-row > .col33 :nth-last-child(1){
+            margin-bottom: 0;
+         }
+         .foot-heading{
+            padding-bottom: 8px;
+         }
+         .link-list li{
+           margin-bottom: 5px;
+         }
+         .icon-box{
+            justify-content: center;
+            align-items: center;
+         }
+         .foot-row-lower{
+            font-size: 15px;
+            flex-direction: column;
+            text-align: center;
+            padding: 10px 0;
+         }
+    
+
+}
+/* ......................... */
+@media(max-width:575px){
+    .nav-box{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column; 
+    }
+    .nav-logo{
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .nav-links ul li{
+        display: block;
+        padding-right: 0;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .nav-links ul li a {
+        font-size: 22px;
+        color: white;
+    }
+    .main-links{
+     display: flex;
+      /* list-style-type: none; */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-right: 0px;
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      left: -100%;
+      top: 0%;
+      background-color: orangered;
+      transition: 500ms;
+
+    }
+    .menu{
+        left: 0%;
+        top: 0%;
+        transition: 500ms;
+        z-index: 2;
+    }
+    .toggle-bar {
+        display: block;
+        font-size: 30px;
+        /* background-color: rgb(237, 95, 95); */
+        position: absolute;
+        right: 5%;
+        top: 4%;
+        color: black;
+        z-index: 3;      
+    }
+    .nav-links ul li .active{
+        color: black;
+    }
+    .nav-links ul li a :hover{
+        color: black;
+    }
+    .slider1{
+        min-height: 400px;
+    }
+    .slider2{
+        min-height: 400px;
+    }
+    .slider3{
+        min-height: 400px;
+    }
+        .banner1-text h1{
+        font-size: 45px;   
+        }
+        .banner1-text p{
+        font-size: 18px;
+        padding-bottom: 30px;
+        }
+        .banner1-text a{
+        font-size: 15px;
+        padding: 8px 14px;
+        }
+        .cardsec1-box > .col33{
+        max-width: 100%;
+        flex: 0 0 100%;
+        }
+        .cardsec1-heading{
+        padding: 20px 0;   
+        }
+        .cardsec1-heading h2{
+        font-size: 30px;
+        }
+        .cardbox-1{
+        height: 400px;
+        margin: 13px;
+        margin-bottom: 43px;
+        }
+        .card1-image img{
+        height: auto;
+        /* width: 350px; */
+        object-fit: cover; 
+        width: 100%;
+        }
+        .intro{
+        height: 60px;
+        /* width: 350px; */
+        padding: 6px;
+        bottom: 0;
+        width: 100%;
+        }
+        .intro h3{
+        margin: 8px;
+        font-size: 18px;
+        }
+        .trekbox-1 > .col50{
+        max-width: 100%;
+        flex:0 0 100%;
+        }
+         .trektrips-sec1{
+             padding-top: 40px;
+         }
+         .trekbox-1{
+             text-align: center;
+         }
+         .trekbox-1 h3{
+             font-size: 30px;
+             padding: 0 50px 20px 50px;
+             text-align: center; 
+         }
+         .trekbox-1 p{
+             font-size: 16px;
+             padding-bottom: 40px;
+         }
+         .trekbox-1 a{
+              padding: 10px 19px;
+              margin-bottom: 20px;
+         }
+         .trekbox-1-card{
+             visibility: hidden;
+         }
+         .tools-heading{
+             padding: 40px 0 20px 0;   
+         }
+         .tools-heading h2{
+            font-size: 25px;
+         
+         }
+         .cardsec2-box > .col25{
+             max-width: 50%;
+             flex: 0 0 50%;
+             margin-bottom: 20px;
+         }
+         .tools-heading{
+            padding: 70px 100px 20px 100px;
+            text-align: center;
+        
+        }
+        .tools img{
+             max-width: 100%;
+             padding: 50px;    
+         }
+        .tools{
+            text-align: center;
+        }
+        .tool-name{
+             margin-top: 10px;
+             text-align: center;
+         }
+         .tool-name h4{
+             font-size: 18px;
+         }
+         .roundtrip-sec{
+             padding: 30px 0;
+         }
+         .roundtrip-box > .col50{
+             max-width: 100%;
+             flex: 0 0 100%;
+             text-align: center;
+         }
+        .roundtrip-box h3{
+        font-size: 28px;
+        padding-bottom: 20px;
+        padding: 0 50px 20px 50px;
+        text-align: center;
+        }
+        h2.h5-title{
+        padding: 10px 0;
+        }
+         .roundtrip-box p{
+             padding-bottom: 20px;  
+         }
+         .img-sec{
+             background-size: cover;
+             min-height: 130px;
+             
+         }
+         .guide-sec{
+             padding: 30px 0;
+         }
+         .guide-img img{
+            width: 70%;
+         }
+         .h5-title2{
+             font-size: 18px;
+         }
+     
+        .guide-heading{
+        padding: 0 25px 20px 25px;
+        font-size: 32px;     
+        }
+         .guide-box > .col25 {
+             max-width: 100%;
+             flex: 0 0 100%;
+             margin-bottom: 20px;
+             text-align: center;
+         }
+         .guide-dets{
+              padding-top: 10px;
+         }
+         .guide-dets h4{
+             font-size: 22px;
+         }
+         .guide-dets p{
+             font-size: 18px;
+         }
+         .footer-sec{
+             padding-top: 50px;
+             background-size: cover;
+         }
+         .footer-head h3{
+             font-size: 32px;
+             padding-bottom: 25px;
+             margin: 0;
+             padding: 20px 50px;
+         }
+          input[type="email"]{
+            font-size: 15px;
+         }
+         input[type="submit"]{
+            font-size: 15px;
+         }
+         .footer-row > .col33{
+            max-width: 100%;
+            flex: 0 0 100%;
+            text-align: center;
+            margin-bottom: 30px;
+         }
+         .foot-heading{
+            padding-bottom: 8px;
+         }
+         .link-list li{
+           margin-bottom: 5px;
+         }
+         .icon-box{
+            justify-content: center;
+            align-items: center;
+         }
+         .foot-row-lower{
+            font-size: 15px;
+            flex-direction: column;
+            text-align: center;
+            padding: 10px 0;
+         }
+    
+
+}
+@media(max-width:480px){
+    .nav-box{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column; 
+    }
+    .nav-logo{
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .nav-links ul li{
+        display: block;
+        padding-right: 0;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .nav-links ul li a {
+        font-size: 22px;
+        color: white;
+    }
+    .main-links{
+     display: flex;
+      /* list-style-type: none; */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-right: 0px;
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      left: -100%;
+      top: 0%;
+      background-color: orangered;
+      transition: 500ms;
+    }
+    .menu{
+        left: 0%;
+        top: 0%;
+        transition: 500ms;
+        z-index: 2;
+    }
+    .toggle-bar {
+        display: block;
+        font-size: 30px;
+        /* background-color: rgb(237, 95, 95); */
+        position: absolute;
+        right: 5%;
+        top: 3%;
+        color: black;
+        z-index: 3;      
+    }
+    .nav-links ul li .active{
+        color: black;
+    }
+    .nav-links ul li a :hover{
+        color: black;
+    }
+    .slider1{
+        min-height: 400px;
+    }
+    .slider2{
+        min-height: 400px;
+    }
+    .slider3{
+        min-height: 400px;
+    }
+        .banner1-text h1{
+        font-size: 45px;   
+        }
+        .banner1-text p{
+        font-size: 18px;
+        padding-bottom: 30px;
+        }
+        .banner1-text a{
+        font-size: 15px;
+        padding: 8px 14px;
+        }
+        .cardsec1-box > .col33{
+        max-width: 100%;
+        flex: 0 0 100%;
+        }
+        .cardsec1-heading{
+        padding: 20px 0;   
+        }
+        .cardsec1-heading h2{
+        font-size: 30px;
+        }
+        .cardbox-1{
+        height: 400px;
+        margin: 13px;
+        margin-bottom: 43px;
+        }
+        .card1-image img{
+        height: 400px;
+        /* width: 350px; */
+        object-fit: cover; 
+        width: 100%;
+        }
+        .intro{
+        height: 60px;
+        /* width: 350px; */
+        padding: 6px;
+        bottom: 0;
+        width: 100%;
+        }
+        .intro h3{
+        margin: 8px;
+        font-size: 18px;
+        }
+        .trekbox-1 > .col50{
+        max-width: 100%;
+        flex:0 0 100%;
+        }
+         .trektrips-sec1{
+             padding-top: 10px;
+         }
+         .trekbox-1{
+             text-align: center;
+         }
+         .trekbox-1 h3{
+             font-size: 30px;
+             padding: 0 50px 20px 50px;
+             text-align: center; 
+         }
+         .trekbox-1 p{
+             font-size: 16px;
+             padding-bottom: 40px;
+         }
+         .trekbox-1 a{
+              padding: 10px 19px;
+              margin-bottom: 20px;
+         }
+         .trekbox-1-card{
+             visibility: hidden;
+         }
+         .tools-heading{
+             padding: 40px 0 20px 0;   
+         }
+         .tools-heading h2{
+            font-size: 25px;
+         
+         }
+         .cardsec2-box > .col25{
+             max-width: 50%;
+             flex: 0 0 50%;
+             margin-bottom: 20px;
+         }
+         .tools-heading{
+            padding: 40px 50px 20px 50px;
+            text-align: center;
+        
+        }
+        .tools img{
+             max-width: 100%;
+             padding: 50px;    
+         }
+        .tools{
+            text-align: center;
+        }
+        .tool-name{
+             margin-top: 10px;
+             text-align: center;
+         }
+         .tool-name h4{
+             font-size: 18px;
+         }
+         .roundtrip-sec{
+             padding: 30px 0;
+         }
+         .roundtrip-box > .col50{
+             max-width: 100%;
+             flex: 0 0 100%;
+             text-align: center;
+         }
+        .roundtrip-box h3{
+        font-size: 28px;
+        padding-bottom: 20px;
+        padding: 0 50px 20px 50px;
+        text-align: center;
+        }
+        h2.h5-title{
+        padding: 10px 0;
+        }
+         .roundtrip-box p{
+             padding-bottom: 20px;  
+         }
+         .img-sec{
+             background-size: cover;
+             min-height: 130px;
+             
+         }
+         .guide-sec{
+             padding: 30px 0;
+         }
+         .guide-img img{
+            width: 70%;
+         }
+         .h5-title2{
+             font-size: 18px;
+         }
+        .guide-heading{
+        padding: 0 25px 20px 25px;
+        font-size: 32px;     
+        }
+        .guide-box > .col25 {
+            max-width: 100%;
+            flex: 0 0 100%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+         .guide-dets{
+              padding-top: 10px;
+         }
+         .guide-dets h4{
+             font-size: 22px;
+         }
+         .guide-dets p{
+             font-size: 18px;
+         }
+         .footer-sec{
+             padding-top: 50px;
+             background-size: cover;
+         }
+         .footer-head h3{
+             font-size: 32px;
+             padding-bottom: 25px;
+             margin: 0;
+             padding: 20px 50px;
+         }
+          input[type="email"]{
+            font-size: 15px;
+         }
+         input[type="submit"]{
+            font-size: 15px;
+         }
+         .footer-row > .col33{
+            max-width: 100%;
+            flex: 0 0 100%;
+            text-align: center;
+            margin-bottom: 30px;
+         }
+         .foot-heading{
+            padding-bottom: 8px;
+         }
+         .link-list li{
+           margin-bottom: 5px;
+         }
+         .icon-box{
+            justify-content: center;
+            align-items: center;
+         }
+         .foot-row-lower{
+            font-size: 15px;
+            flex-direction: column;
+            text-align: center;
+            padding: 10px 0;
+         }
+    
+
+}
+/* ..................................... */
+
+@media(max-width:375px){
+    .nav-box{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;  
+    }
+    .nav-logo{
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .nav-logo img{
+        width: 100%;
+    }
+    .nav-links ul li{
+        display: block;
+        padding-right: 0;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .nav-links ul li a {
+        font-size: 22px;
+        color: white;
+    }
+    .main-links{
+     display: flex;
+      /* list-style-type: none; */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-right: 0px;
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      left: -100%;
+      top: 0%;
+      background-color: orangered;
+      transition: 500ms;
+
+    }
+    .menu{
+        left: 0%;
+        top: 0%;
+        transition: 500ms;
+        z-index: 2;
+     }
+     .toggle-bar {
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        right: 5%;
+        top: 4%;
+        color: black;
+        z-index: 3;
+        
+     }
+     .nav-links ul li .active{
+        color: black;
+
+    }
+    .nav-links ul li a :hover{
+        color: black;
+    }
+    .slider1{
+        min-height: 400px;
+    }
+    .slider2{
+        min-height: 400px;
+    }
+    .slider3{
+        min-height: 400px;
+    }
+    .banner1-text h1{
+        font-size: 45px;   
+    }
+    .banner1-text p{
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+    .banner1-text a{
+        font-size: 15px;
+        padding: 8px 14px;
+      
+    }
+    .cardsec1-box > .col33{
+        max-width: 100%;
+        flex: 0 0 100%;
+        
+    }
+    .cardsec1-heading{
+        padding: 20px 0;   
+    }
+    .cardsec1-heading h2{
+        font-size: 30px;
+    }
+    .cardbox-1{
+        height: 400px;
+        margin: 13px;
+        margin-bottom: 43px;
+    }
+    .card1-image img{
+        height: 400px;
+        object-fit: cover; 
+        width: 100%;
+    }
+    .intro{
+        height: 60px;
+        padding: 6px;
+        bottom: 0;
+        width: 100%;
+    }
+    .intro h3{
+        margin: 8px;
+        font-size: 18px;
+    }
+    .trekbox-1 > .col50{
+        max-width: 100%;
+        flex:0 0 100%;
+    }
+    .trektrips-sec1{
+        padding-top: 40px;
+    }
+    .trekbox-1{
+        text-align: center;
+    }
+    .trekbox-1 h3{
+        font-size: 30px;
+        padding-bottom: 20px;  
+    }
+    .trekbox-1 p{
+        font-size: 16px;
+        padding-bottom: 40px;
+    }
+    .trekbox-1 a{
+         padding: 10px 19px;
+         margin-bottom: 20px;
+    }
+    .trekbox-1-card{
+        visibility: hidden;
+    }
+    .tools-heading{
+        padding: 40px 0 20px 0;   
+    }
+    .tools-heading h2{
+       font-size: 25px;
+    
+    }
+    .cardsec2-box > .col25{
+        max-width: 50%;
+        flex: 0 0 50%;
+        margin-bottom: 20px;
+    }
+    .tools img{
+        text-align: center;
+        max-width: 100%;
+        padding: 30px;    
+    }
+    .tool-name{
+        margin-top: 10px;
+    }
+    .tool-name h4{
+        font-size: 18px;
+    }
+    .roundtrip-sec{
+        padding: 30px 0;
+    }
+    .roundtrip-box > .col50{
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: center;
+    }
+    .roundtrip-box h3{
+        font-size: 28px;
+        padding-bottom: 20px;    
+    }
+    .h5-title{
+        padding: 10px 0;
+    }
+    .roundtrip-box p{
+        padding-bottom: 20px;  
+    }
+    .img-sec{
+        background-size: cover;
+        min-height: 130px;   
+    }
+    .guide-sec{
+        padding: 30px 0;
+    }
+    .h5-title2{
+        font-size: 18px;
+    }
+
+    .guide-heading{
+        padding-bottom: 20px;
+        font-size: 28px;     
+    }
+    .guide-box > .col25 {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .guide-dets{
+         padding-top: 10px;
+    }
+    .guide-dets h4{
+        font-size: 18px;
+    }
+    .guide-dets p{
+        font-size: 15px;
+    }
+    .footer-sec{
+        padding-top: 50px;
+        background-size: cover;
+    }
+    .footer-head h3{
+        font-size: 27px;
+        padding-bottom: 25px;
+        margin: 0;
+        padding: 20px 0;
+    }
+    input[type="email"]{
+        font-size: 15px;
+    }
+    input[type="submit"]{
+        font-size: 15px;
+    }
+    .footer-row > .col33{
+    max-width: 100%;
+    flex: 0 0 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    }
+    .foot-heading{
+    padding-bottom: 8px;
+    }
+    .link-list li{
+    margin-bottom: 5px;
+    }
+    .icon-box{
+    justify-content: center;
+    align-items: center;
+    }
+    .foot-row-lower{
+    font-size: 15px;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+    }
+}
+/* ............................... */
+
+@media(max-width:320px){
+    .nav-box{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+    }
+    .nav-logo{
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .nav-links ul li{
+        display: block;
+        padding-right: 0;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .nav-links ul li a {
+        font-size: 22px;
+        color: white;
+    }
+    .main-links{
+     display: flex;
+      /* list-style-type: none; */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-right: 0px;
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      left: -100%;
+      top: 0%;
+      background-color: orangered;
+      transition: 500ms;
+    }
+    .menu{
+        left: 0%;
+        top: 0%;
+        transition: 500ms;
+        z-index: 2;
+     }
+     .toggle-bar {
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        right: 5%;
+        top: 4%;
+        color: black;
+        z-index: 3;   
+     }
+     .nav-links ul li .active{
+        color: black;
+    }
+    .nav-links ul li a :hover{
+        color: black;
+    }
+    .slider1{
+        min-height: 500px;
+    }
+    .slider2{
+        min-height: 500px;
+    }
+    .slider3{
+        min-height: 500px;
+    }
+    .banner1-text h1{
+        font-size: 45px;   
+    }
+    .banner1-text p{
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+    .banner1-text a{
+        font-size: 15px;
+        padding: 8px 14px; 
+    }
+    .cardsec1-box > .col33{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .cardsec1-heading{
+        padding: 20px 0;   
+    }
+    .cardsec1-heading h2{
+        font-size: 30px;
+    }
+    .cardbox-1{
+        height: 400px;
+        margin: 13px;
+        margin-bottom: 43px;
+    }
+    .card1-image img{
+        height: 400px;
+        object-fit: cover; 
+        width: 100%;
+    }
+    .intro{
+        height: 60px;
+        padding: 6px;
+        bottom: 0;
+        width: 100%;
+    }
+    .intro h3{
+        margin: 8px;
+        font-size: 18px;
+    }
+    .trekbox-1 > .col50{
+        max-width: 100%;
+        flex:0 0 100%;
+    }
+    .trektrips-sec1{
+        padding-top: 40px;
+    }
+    .trekbox-1{
+        text-align: center;
+    }
+    .trekbox-1 h3{
+        font-size: 30px;
+        padding-bottom: 20px;  
+    }
+    .trekbox-1 p{
+        font-size: 16px;
+        padding-bottom: 40px;
+    }
+    .trekbox-1 a{
+         padding: 10px 19px;
+         margin-bottom: 20px;
+    }
+    .trekbox-1-card{
+        visibility: hidden;
+    }
+    .tools-heading{
+        padding: 40px 0 20px 0;   
+    }
+    .tools-heading h2{
+       font-size: 25px;
+    
+    }
+    .cardsec2-box > .col25{
+        max-width: 50%;
+        flex: 0 0 50%;
+        margin-bottom: 20px;
+    }
+    .tools img{
+        text-align: center;
+        max-width: 100%;
+        padding: 30px;    
+    }
+    .tool-name{
+        margin-top: 10px;
+    }
+    .tool-name h4{
+        font-size: 18px;
+    }
+    .roundtrip-sec{
+        padding: 30px 0;
+    }
+    .roundtrip-box > .col50{
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: center;
+    }
+    .roundtrip-box h3{
+        font-size: 28px;
+        padding-bottom: 20px;    
+    }
+    .h5-title{
+        padding: 10px 0;
+    }
+    .roundtrip-box p{
+        padding-bottom: 20px;  
+    }
+    .img-sec{
+        background-size: cover;
+        min-height: 130px;   
+    }
+    .guide-sec{
+        padding: 30px 0;
+    }
+    .h5-title2{
+        font-size: 18px;
+    }
+
+    .guide-heading{
+        padding-bottom: 20px;
+        font-size: 28px;     
+    }
+    .guide-box > .col25 {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .guide-dets{
+         padding-top: 10px;
+    }
+    .guide-dets h4{
+        font-size: 18px;
+    }
+    .guide-dets p{
+        font-size: 15px;
+    }
+    .footer-sec{
+        padding-top: 50px;
+        background-size: cover;
+    }
+    .footer-head h3{
+        font-size: 27px;
+        padding-bottom: 25px;
+        margin: 0;
+        padding: 20px 0;
+    }
+    input[type="email"]{
+        font-size: 15px;
+    }
+    input[type="submit"]{
+        font-size: 15px;
+    }
+    .footer-row > .col33{
+    max-width: 100%;
+    flex: 0 0 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    }
+    .foot-heading{
+    padding-bottom: 8px;
+    }
+    .link-list li{
+    margin-bottom: 5px;
+    }
+    .icon-box{
+    justify-content: center;
+    align-items: center;
+    }
+    .foot-row-lower{
+    font-size: 15px;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
